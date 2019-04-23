@@ -10,6 +10,7 @@
                 {{ post.published_date }}
             </div>
             <br><p>{{ post.text|truncatechars:250|linebreaksbr }}</p>
+            <a href="{% url 'post_detail' pk=post.pk %}">Comments: {{ post.approved_comments.count }}</a>
         </div>
     </div>
             {% endfor %}
