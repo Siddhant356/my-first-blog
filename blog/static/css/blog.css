@@ -38,10 +38,10 @@ h1, h2, h3, h4 {
 .top-menu, .top-menu:hover, .top-menu:visited {
     color: #ffffff;
     float: right;
-    font-size: 26pt;
-    margin-right: 20px;
+    font-size: 18pt;
+    margin-right: 15px;
+    padding-top: 25px; 
 }
-
 .post {
     margin-bottom: 70px;
 }
@@ -51,4 +51,22 @@ h1, h2, h3, h4 {
 }
 .comment {
     margin: 20px 0px 20px 20px;
+}
+.btn {
+    padding: 14px 24px;
+    border: 0 none;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #FF6B6B;
+}
+ 
+.btn:focus, .btn:active:focus, .btn.active:focus {
+    outline: 0 none;
+}
+input[type="submit"]{
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+
 }

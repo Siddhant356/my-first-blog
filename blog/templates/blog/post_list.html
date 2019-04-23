@@ -10,7 +10,7 @@
                 {{ post.published_date }}
             </div>
             <br><p>{{ post.text|truncatechars:250|linebreaksbr }}</p>
-            <a href="{% url 'post_detail' pk=post.pk %}">Comments: {{ post.approved_comments.count }}</a>
+            <a href="{% url 'post_detail' pk=post.pk %}"><i class="far fa-comments" style="color: #FF6B6B; font-size: 15pt;"></i> {{ post.approved_comments.count }}</a>
         </div>
     </div>
             {% endfor %}
